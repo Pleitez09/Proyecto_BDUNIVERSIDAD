@@ -46,14 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Ciclos_ingreso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Ciclos_ingreso.Designer.cs">
+      <DependentUpon>Ciclos_ingreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ciclos_listas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos_listas.Designer.cs">
+      <DependentUpon>Ciclos_listas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ciclos_ingreso.resx">
+      <DependentUpon>Ciclos_ingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos_listas.resx">
+      <DependentUpon>Ciclos_listas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
