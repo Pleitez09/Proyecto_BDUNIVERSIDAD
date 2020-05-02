@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -61,7 +62,7 @@ namespace ProyectoUniversidad
         }
         private void bot_crear_Click(object sender, EventArgs e)
         {
-            Ciclos_form ventana = new Ciclos_form();
+            Ciclos_ingreso ventana = new Ciclos_ingreso();
             ventana.ShowDialog();
             int cod = ventana.id;
             ventana.Dispose();
@@ -74,7 +75,7 @@ namespace ProyectoUniversidad
         private void bot_actualizar_Click(object sender, EventArgs e)
         {
             MessageBox.Show(grid_datos.CurrentRow.Cells[1].Value.ToString());
-            Ciclos_form ventana = new Ciclos_form(Convert.ToInt32(grid_datos.CurrentRow.Cells[0].Value), grid_datos.CurrentRow.Cells[1].Value.ToString(), grid_datos.CurrentRow.Cells[2].Value.ToString());
+            Ciclos_ingreso ventana = new Ciclos_ingreso(Convert.ToInt32(grid_datos.CurrentRow.Cells[0].Value), grid_datos.CurrentRow.Cells[1].Value.ToString(), grid_datos.CurrentRow.Cells[2].Value.ToString());
             ventana.ShowDialog();
             ventana.Dispose();
             MessageBox.Show("El registro se ha actualizado con exito");
@@ -82,4 +83,4 @@ namespace ProyectoUniversidad
         }
     }
 }
-}
+
