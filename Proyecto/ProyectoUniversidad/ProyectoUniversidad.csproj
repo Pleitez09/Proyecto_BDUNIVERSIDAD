@@ -65,6 +65,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPley.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPley.Designer.cs">
+      <DependentUpon>FormPley.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Ciclos_ingreso.resx">
